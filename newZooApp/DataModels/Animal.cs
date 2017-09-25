@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace ZooWebApplication.DataModels
+namespace newZooApp.DataModels
 {
     public class Animal
     {
@@ -15,7 +15,7 @@ namespace ZooWebApplication.DataModels
         public string CountryOfOrigin { get; set; }
 
         public virtual int ZooKeeperId { get; set; }
-        public virtual Environment Enclosure { get; set; }
+        public virtual Environment Environment { get; set; }
     }
 
     public enum SpeciesType

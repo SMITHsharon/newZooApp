@@ -4,10 +4,11 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace ZooWebApplication.DataModels
+namespace newZooApp.DataModels
 {
     public class Environment
     {
+        [Key]
         public int EnclosureId { get; set; }
         [Required]
         public EnclosureType EnclosureType { get; set; }
